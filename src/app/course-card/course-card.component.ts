@@ -12,6 +12,14 @@ export class CourseCardComponent implements OnInit {
   @Input()
   course: Course;
 
+  @Input()
+  cardIndex: number;
+
+  // Note: Use these two lines for latest Angular core.
+  // @Input({required: true})
+  // index: number;
+
+
   @Output('courseSelected')
   courseEmitter = new EventEmitter<Course>();
 

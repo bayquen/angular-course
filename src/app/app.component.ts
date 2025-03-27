@@ -9,14 +9,15 @@ import { Course } from './model/course';
     standalone: false
 })
 export class AppComponent {
-
-    coreCourse = COURSES[0];
-
-    rxjsCourse = COURSES[1];
     
-    ngrxCourse = COURSES[2];
+    courses = COURSES;
 
     onCourseSelected(course:Course) {
-        console.log('App component - click event bubbled...', course);
+        console.log('App component', course);
     }
+
+    trackCourse(index:number, course:Course) {
+        return course.id;
+    }
+
 }
