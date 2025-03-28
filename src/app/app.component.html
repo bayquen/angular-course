@@ -5,6 +5,17 @@
 
 </div>
 
+<div class="demo">
+    <!-- <div>Start Date: {{ startDate | date: 'MM/dd/yyyy'}}</div> -->
+    <!-- <div> {{ price | currency: 'EUR' }} </div> -->
+    <!-- <div> Percentage: {{ rate | percent }}</div> -->
+</div>
+
+<div *ngFor="let pair of course | keyvalue">
+    <!-- {{pair.key + ': ' + pair.value}} -->
+</div>
+
+
 <div>
     <div class="courses">
         <!-- NOTE: ngFor Core Directive (older Angular syntax) -->
